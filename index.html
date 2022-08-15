@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Giancarlo Franco">
+    <meta name="description" content="Box Model cheatsheet.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/images/view-in-ar-new.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <title>Box Model</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">The Box Model</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="content-title">The Box Model</h2>
+
+            <p class="principal-content">
+                The box model is a set of properties that define the size parts of an element on a web page.
+            </p>
+
+            <aside class="secondary-content">
+                <p>
+                    The box model is made up of 4 elements, the size (height and width), the padding, the border
+                    and the margin.
+                </p>
+            </aside>
+
+            <ol>
+                <li>
+                    <code>width</code> and <code>height</code>: The height and width of the content.
+                </li>
+                <li>
+                    <code>padding</code>: The amount of space between the border and the content.
+                </li>
+                <li>
+                    <code>border</code>: The thickness and style of the border that surrounds the area of the
+                    padding and content.
+                </li>
+                <li>
+                    <code>margin</code>: The amount of space between the border and the outer border of the
+                    element.
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="content-title">Size</h2>
+
+            <p class="principal-content">
+                The size of the content of an HTML element can be defined with the CSS height and width properties.
+            </p>
+
+            <aside class="secondary-content">
+                <p>
+                    <code>height</code> and <code>weight</code> can be assigned by different types of measurement
+                    values, such as pixels, imperial units, and metric units, etc.
+                </p>
+            </aside>
+
+            <div class="size">
+                <span class="vertical">Height = 175 pixels</span>
+                <span class="horizontal">Width = 300 pixels</span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="content-title">Padding</h2>
+
+            <p class="principal-content">
+                The padding generates a space between the border and the size of the content, being very useful to
+                accommodate the content of the box.
+            </p>
+
+            <aside class="secondary-content">
+                <p class="secondary-content__-first-paragraph">
+                    The CSS property <code>padding</code>, accepts different measure values, as do the size
+                    properties. This CSS property has 4 directions, top, bottom, left, and right, and can have up to
+                    4 median units for the directions.
+                </p>
+                <p>
+                    Padding has 4 ways to assign measures:
+                </p>
+            </aside>
+
+            <ul>
+                <li>
+                    When it only has one measure value. This applies to all addresses of the box element.
+                </li>
+                <li>
+                    When it have two measure values. This assigns the first value to the vertical directions and the
+                    second value to the horizontal directions.
+                </li>
+                <li>
+                    When it have three measure values assigned. This causes the first value to be assigned to the top
+                    address of the box element, the second value to the bottom address, and the third value to the
+                    horizontal addresses.
+                </li>
+                <li>
+                    When it have 4 assigned measurement values. This makes each value correspond to each of the box
+                    element's addresses; top, right, bottom, left, respectively.
+                </li>
+            </ul>
+
+            <div class="padding">
+                <span class="padding__-horizontal horizontal">Padding = 25 pixels</span>
+
+                <div class="size">
+                    <span class="vertical">Height = 175 pixels</span>
+                    <span class="horizontal">Width = 300 pixels</span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="content-title">Border</h2>
+
+            <p class="principal-content">
+                The border CSS property is used to generate, as its name suggests, a border to the box element, this
+                border is outside the padding area.
+            </p>
+
+            <aside class="secondary-content">
+                <p>
+                    This CSS property has several ways to assign values, the main one consists of three values, size
+                    measurement, border style and color.
+                </p>
+            </aside>
+
+            <div class="border">
+                <span class="border__-horizontal horizontal">Border = 20 pixels, solid, gray</span>
+
+                <div class="padding">
+                    <span class="padding__-horizontal horizontal">Padding = 25 pixels</span>
+
+                    <div class="size">
+                        <span class="vertical">Height = 175 pixels</span>
+                        <span class="horizontal">Width = 300 pixels</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="content-title">Margin</h2>
+
+            <p class="principal-content">
+                The margin is used to determine the size of an area, this being the area outside the border of the 
+                box element.
+            </p>
+
+            <aside class="secondary-content">
+                <p>
+                    The CSS <code>margin</code> property has an almost identical way to <code>padding</code> when it
+                    comes to assigning size values.
+                </p>
+            </aside>
+
+            <span class="margin__-horizontal horizontal">Margin = 30 pixels</span>
+
+            <div class="margin">
+
+                <div class="border">
+                    <span class="border__-horizontal horizontal">Border = 20 pixels, solid, gray</span>
+    
+                    <div class="padding">
+                        <span class="padding__-horizontal horizontal">Padding = 25 pixels</span>
+    
+                        <div class="size">
+                            <span class="vertical">Height = 175 pixels</span>
+                            <span class="horizontal">Width = 300 pixels</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="content-title">CSS Margin Collapse</h2>
+
+            <p class="principal-content">
+                CSS margin collapse occurs when the top and bottom margins of blocks are combined into a single 
+                margin equal to the largest individual block margin.
+            </p>
+
+            <aside class="secondary-content">
+                <p>
+                    Margin collapse only occurs with vertical margins, not for horizontal margins.
+                </p>
+            </aside>
+
+            <span class="margin__-horizontal horizontal">Margin = 25 pixels</span>
+
+            <div class="margin-collapse margin">
+                <div class="other-elements border">
+                    <span class="margin__-horizontal horizontal">Other elements = 300 pixels * 175 pixels</span>
+                </div>
+            </div>
+
+            <div class="margin-collapse second-margin-collapse margin margin-2">
+                <div class="other-elements second-other-elements border">
+                    <span class="margin__-horizontal horizontal">Other elements = 300 pixels * 175 pixels</span>
+                </div>
+            </div>
+
+            <span class="margin__-horizontal-2 horizontal">Horizontal margin = 25 pixels</span>
+            <span class="margin__-vertical vertical">Vertical margin = 35 pixels</span>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="content-title">CSS auto keyword</h2>
+
+            <p class="principal-content">
+                The value auto can be used with the property margin to horizontally center an element within its 
+                container. The margin property will take the width of the element and will split the rest of the 
+                space equally between the left and right margins.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

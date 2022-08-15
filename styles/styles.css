@@ -1,0 +1,265 @@
+/*
+The order of CSS properties in this document is:
+    1. Box Model.
+    2. Font properties.
+    3. Margin, Padding and Position.
+    4. Size.
+    5. Transform.
+    6. Index.
+
+And in turn, these properties are organized in alphabetical order.
+*/
+
+@font-face {
+    font-family: 'Figtree Medium';
+    src: url('/fonts/Figtree-Medium.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/images/abstract-square-geometric-element-vector.webp');
+    background-position: 50% 110px;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(to right, hsl(280, 100%, 7.5%), hsl(250, 100%, 7.5%));
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+main {
+    background-color: hsla(0, 0%, 85%, .9);
+    border-radius: 25px;
+    left: 0;
+    right: 0;
+    margin: 100px auto;
+    padding: 0 40px;
+    width: 1000px;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+div {
+    border: 5px dashed hsla(0, 0%, 0%, .5);
+    margin: 25px auto;
+    position: relative;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: 'Figtree Medium', sans-serif;
+    font-size: 3.75em;
+}
+
+hr {
+    background-color: hsla(0, 0%, 20%, .8);
+    border-radius: 2.5px;
+    border-style: none;
+    margin: 25px 50px;
+    height: 5px;
+    z-index: 10;
+}
+
+p, li {
+    line-height: 1.25;
+}
+
+ol, ul {
+    padding: 0 35px;
+    font-family: 'Poppins Regular';
+}
+
+li {
+    margin: 10px;
+}
+
+span {
+    display: inline-block;
+    color: hsl(0, 0%, 10%);
+    font-family: 'Poppins Medium', sans-serif;
+    text-align: center;
+}
+
+code {
+    display: inline-block;
+    background-color: hsl(0, 0%, 67.5%);
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.title {
+    color: hsla(0, 0%, 100%, .75);
+    margin: auto;
+    padding: 10px 0;
+    height: 100%;
+    width: 600px;
+}
+
+.content-title {
+    padding: 25px 0;
+}
+
+.principal-content {
+    color: hsl(0, 0%, 15%);
+    font-family: 'Poppins Medium', sans-serif;
+    font-size: 1.5em;
+}
+
+.secondary-content {
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 1.25em;
+    padding: 10px 0;
+}
+
+.size {
+    background-color: hsl(0, 0%, 85%);
+    height: 175px;
+    width: 300px;
+}
+
+.vertical {
+    top: 0;
+    bottom: 0;
+    left: -57.5px;
+    margin: auto;
+    position: absolute;
+    height: 25px;
+    width: 140px;
+    transform: rotate(-90deg);
+}
+
+.horizontal {
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    height: 25px;
+    width: 140px;
+}
+
+.secondary-content__-first-paragraph {
+    margin-bottom: 10px;
+}
+
+.padding {
+    background-color: hsl(0, 0%, 70%);
+    height: 235px;
+    width: 360px;
+}
+
+.padding__-horizontal {
+    color: hsl(0, 0%, 5%);
+    width: 150px;
+}
+
+.border {
+    background-color: hsl(0, 0%, 55%);
+    height: 285px;
+    width: 410px;
+}
+
+.border .padding {
+    margin: 20px auto;
+}
+
+.border__-horizontal {
+    background-color: hsl(0, 0%, 55%);
+    color: hsl(0, 0%, 0%);
+    top: -5px;
+    width: 263px;
+}
+
+.margin {
+    background-color: hsl(0, 0%, 40%);
+    margin: 0 auto;
+    height: 355px;
+    width: 480px;
+    z-index: 2;
+}
+
+.margin .border {
+    margin: 30px auto;
+}
+
+.margin__-horizontal {
+    margin-top: 25px;
+    position: static;
+    width: 100%;
+}
+
+.other-elements {
+    height: 175px;
+    width: 300px;
+}
+
+.margin-collapse {
+    height: 235px;
+    width: 360px;
+}
+
+.second-margin-collapse {
+    height: 255px;
+}
+
+.second-other-elements {
+    margin: 35px 25px;
+}
+
+.margin__-vertical {
+    top: -220px;
+    left: -192px;
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+}
+
+.margin__-horizontal-2 {
+    position: relative;
+    top: -25px;
+    width: 100%;
+}
+
+.margin-2 {
+    top: -25px;
+    z-index: 1;
+}
